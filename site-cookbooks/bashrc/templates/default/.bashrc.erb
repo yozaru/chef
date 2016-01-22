@@ -1,0 +1,21 @@
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias h='history'
+
+HISTTIMEFORMAT='%Y-%m-%dT%T%z '
+HISTSIZE=5000       # 現在使用中のbashが保持する履歴数
+HISTFILESIZE=5000   # 履歴ファイルに保存される履歴数
+# HISTCONTROL=ignoredups  # 同じコマンドが連続する場合は1回だけ記録する
+# HISTCONTROL=ignorespace # コマンドの頭にスペースを付けて実行すると記録しない
+HISTCONTROL=ignoreboth    # ignoredupsとignorespaceどちらも設定する
+HISTIGNORE=history     # historyは記録しない。
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
