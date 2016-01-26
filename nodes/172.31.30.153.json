@@ -1,7 +1,8 @@
 {
   "run_list": [
 	"recipe[basic]",
-	"recipe[bashrc]"
+	"recipe[bashrc]",
+	"recipe[bind-utils]"
   ],
   "automatic": {
     "ipaddress": "172.31.30.153"
